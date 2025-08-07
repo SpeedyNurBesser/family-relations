@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Relations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 data-i18n="title" class="title"></h1>
+
+    <div class="language-selection">
+        <a href="javascript:;" class="language-icon" onclick="changeLanguage('en')"><img src="assets/english_icon.png"></a>
+        <a href="javascript:;" class="language-icon" onclick="changeLanguage('de')"><img src="assets/german_icon.png"></a>
+    </div>
+
+    <div id="selection-card" class="card">
+        <span data-i18n="question-start"></span>
+        <div id="selector-list"></div>
+
+        <button id="add" data-i18n="add"></button>
+
+        <div id="reference-list">
+            
+        </div>
+
+        <button id="ask" data-i18n="ask"></button>
+    </div>
+
+    <div id="answer-card" class="card">
+        <div id="answer-section"></div>
+        <iframe>
+            Lustig Lustig
+        </iframe>
+    </div>
+
+    <script src="language.js"></script>
+    <script src="ui.js"></script>
+    <script src="relativeNode.js"></script>
+    <script src="tree.js"></script>
+</body>
+</html>

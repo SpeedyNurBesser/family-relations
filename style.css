@@ -1,0 +1,162 @@
+body {
+    background-color: #222222;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (orientation: portrait) {
+  body {
+    height: 100vh;
+    width: 100vh;
+    overflow-x: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform-origin: 100% 0vh 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@media only screen and (orientation:landscape) {
+  body {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+
+span {
+    color: black
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.language-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    width: 768px;
+}
+
+.language-icon {
+    transition: 0.4s;
+}
+
+.language-icon:hover {
+    opacity: .5;
+}
+
+.selector {
+    padding: 12px;
+    background-color: #6c757d;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.selector .article-span {
+    display: inline-block;
+    width: 128px;
+}
+
+.selector .great-span {
+    display: inline-block;
+    width: 64px;
+}
+
+.selector input[type=number] {
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #222222;
+    font-weight: bold;
+}
+
+.selector input[type=number]:focus {
+    border-bottom: 2px solid #222222;
+}
+
+.selector .is-grand {
+    width: 32px;
+}
+
+.selector .grand-span {
+    display: inline-block;
+    width: 64px
+}
+
+.selector .selector-select {
+    width: 256px;
+    margin-right: 12px;
+}
+
+.selector button {
+    width: 24px;
+    background-color: #ed5565;
+    color: white;
+    border: transparent;
+    border-radius: 12px;
+}
+
+.selector button:hover {
+    background-color: #da4453;
+    transition-duration: 0.4s;
+}
+
+#add {
+    color: white;
+    background-color: #a0d468;
+    width: 96px;
+    height: 24px;
+    border: transparent;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+#add:hover {
+    background-color: #8cc152;
+    transition-duration: 0.4s;
+}
+
+#reference-select {
+    padding: 12px;
+    background-color: #6c757d;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+#ask {
+    color: white;
+    background-color: #5d9cec;
+    height: 48px;
+    width: 100%;
+    border: transparent;
+    border-radius: 12px;
+}
+
+#ask:hover {
+    background-color: #4a89dc;
+    transition-duration: 0.4s;
+}
+
+.card {
+    border-radius: 12px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 768px;
+    padding: 32px;
+}

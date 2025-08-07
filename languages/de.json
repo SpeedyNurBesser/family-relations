@@ -1,0 +1,76 @@
+{
+    "title": "Familienbeziehungen",
+    "question-start": "Wer ist...",
+
+    "great": "× Ur- ",
+    "grand": "Groß- ",
+    "grand-child": "Enkel- ",
+    "degree": "°",
+
+    "sibling": "Geschwisterkind (Bruder / Schwester)",
+    "child": "Kind (Sohn / Tochter)",
+    "grandchild": "Enkelkind (Enkel / Enkelin)",
+    "parent": "Elternteil (Vater / Mutter)",
+    "grandparent": "Großelternteil (Großvater / Großmutter)",
+    "pibling": "Onkel / Tante",
+    "cousin": "Cousin / Cousine bzw. Vetter / Base",
+    "nibling": "Neffe / Nichte",
+
+    "the-nom": "der / die / das",
+    "the-gen": "des / der",
+    "my-gen": "meines / meiner",
+    "empty": " ",
+
+    "add": "+ Hinzufügen",
+    "remove": "-",
+
+    "gen-sibling": "Geschwisterkindes (Bruders / Schwester)",
+    "gen-child": "Kindes (Sohns / Tochter)",
+    "gen-grandchild": "Enkelkindes (Enkels / Enkelin)",
+    "gen-parent": "Elternteils (Vaters / Mutter)",
+    "gen-grandparent": "Großelternteils (Großvaters / Großmutter)",
+    "gen-pibling": "Onkels / Tante",
+    "gen-cousin": "Cousins / Cousine bzw. Vetters / Base",
+    "gen-nibling": "Neffen / Nichte",
+
+    "for": " für ",
+
+    "me": "mich",
+    "my-sibling": "mein Geschwisterkind (meinen Bruder / meine Schwester)",
+    "my-child": "mein Kind (meinen Sohn / meine Tochter)",
+    "my-grandchild": "meinen Enkel / meine Enkelin",
+    "my-parent": "mein Elternteil (meinen Vater / meine Mutter)",
+    "my-grandparent": "mein Großelternteil (meinen Großvater / meine Großmutter)",
+    "my-pibling": "meinen Onkel / meine Tante",
+    "my-cousin": "meinen Cousin / meine Cousine bzw. meinen Vetter / meine Base",
+    "my-nibling": "meinen Neffe / meine Nichte",
+    "my-spouse": "meinen Ehepartner (meinen Ehemann / meine Ehefrau)",
+
+    "ask": "?",
+
+    "your": "Die gesuchte Person ist der / die / das ",
+    "yourself": "eigene Existieren",
+    "upper-your-cousin": "Cousin(e)",
+    "upper-your-pibling": "Tante bzw. -Onkel",
+    "upper-your-nibling": "Neffe bzw. -Nichte",
+    "upper-your-parent": "Elternteil",
+    "upper-your-sibling": "Geschwisterkind",
+    "upper-your-child": "Kind",
+
+    "upper-great": "Ur",
+    "upper-grand": "Groß",
+    "upper-grand-child-prefix": "Enkel",
+
+    "lower-your-cousin": "cousin(e)",
+    "lower-your-pibling": "tante bzw. -onkel",
+    "lower-your-nibling": "neffe bzw. -nichte",
+    "lower-your-parent": "elternteil",
+    "lower-your-sibling": "geschwisterkind",
+    "lower-your-child": "kind",
+
+    "lower-great": "ur",
+    "lower-grand": "groß",
+    "lower-grand-child-prefix": "enkel",
+
+    "or": "ODER"
+}

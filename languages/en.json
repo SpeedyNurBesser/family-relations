@@ -1,0 +1,70 @@
+{
+    "title": "Family Relations",
+    "question-start": "Who is...",
+
+    "great": "× Great ",
+    "grand": "Grand ",
+    "grand-child": "Grand ",
+    "degree": ".",
+
+    "sibling": "Sibling (Brother / Sister)",
+    "child": "Child (Son / Daughter)",
+    "parent": "Parent (Father / Mother)",
+    "pibling": "Pibling (Uncle / Aunt)",
+    "cousin": "Cousin",
+    "nibling": "Nibling (Nephew / Niece)",
+
+    "the-nom": "the",
+    "the-gen": "of the",
+    "my-gen": "of my",
+    "empty": " ",
+
+    "add": "+ Add",
+    "remove": "-",
+
+    "gen-sibling": "Sibling (Brother / Sister)",
+    "gen-child": "Child (Son / Daughter)",
+    "gen-parent": "Parent (Father / Mother)",
+    "gen-pibling": "Pibling (Uncle / Aunt)",
+    "gen-cousin": "Cousin",
+    "gen-nibling": "Nibling (Nephew / Niece)",
+
+    "for": "for",
+
+    "me": "me",
+    "my-sibling": "my Sibling (Brother / Sister)",
+    "my-child": "my Child (Son / Daughter)",
+    "my-grandchild": "my Grandchild (Grandson / Granddaughter)",
+    "my-parent": "my Parent (Father / Mother)",
+    "my-grandparent": "my Grandparent (Grandfather / Grandmother)",
+    "my-pibling": "my Pibling (Uncle / Aunt)",
+    "my-cousin": "my Cousin",
+    "my-nibling": "my Nibling (Nephew / Niece)",
+    "my-spouse": "my Spouse",
+
+    "ask": "?",
+
+    "your": "The person you are looking for is the ",
+    "yourself": "person themselves",
+    "upper-your-cousin": " Cousin",
+    "upper-your-pibling": " Pibling",
+    "upper-your-nibling": " Nibling",
+    "upper-your-parent": " Parent",
+    "upper-your-sibling": " Sibling",
+    "upper-your-child": " Child",
+
+    "upper-great": "Great ",
+    "upper-grand": "Grand ",
+    "upper-grand-child-prefix": "Grand ",
+
+    "lower-your-cousin": " Cousin",
+    "lower-your-pibling": " Pibling",
+    "lower-your-nibling": " Nibling",
+    "lower-your-parent": " Parent",
+    "lower-your-sibling": " Sibling",
+    "lower-your-child": " Child",
+
+    "lower-great": "Great ",
+    "lower-grand": "Grand ",
+    "lower-grand-child-prefix": "Grand "
+}
