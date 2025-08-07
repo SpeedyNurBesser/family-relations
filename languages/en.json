@@ -66,5 +66,7 @@
 
     "lower-great": "Great ",
     "lower-grand": "Grand ",
-    "lower-grand-child-prefix": "Grand "
+    "lower-grand-child-prefix": "Grand ",
+
+    "or": "OR"
 }

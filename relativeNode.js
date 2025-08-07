@@ -53,7 +53,7 @@ class relativeNode {
 
     getDirectChildren() {
         if (this.children.length == 0) {
-            this.children = [new relativeNode([this], [], []), new relativeNode([this], [], [])]
+            this.children = [new relativeNode([this], [], [])]
         }
 
         return this.children
