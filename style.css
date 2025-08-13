@@ -3,7 +3,7 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (orientation: portrait) and (max-width: 832px){
   body {
     height: 100vh;
     width: 100vh;
