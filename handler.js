@@ -1,5 +1,6 @@
-const origin = new relativeNode()
 const answer_section = document.getElementById("answer-section")
+selector_list = document.getElementById("selector-list");
+const chart_section = document.getElementById("chart-section")
 
 function get_relative(reference, step) {
     const relative_type = step["relative"]
@@ -273,8 +274,10 @@ function create_relation_name_from_steps_to_last_common_ancestor(steps_reference
     return text_object
 }
 
-
 ask_button.addEventListener("click", function () {
+    currentValue = 0;
+    const origin = new relativeNode([], [], true)
+
     // 1. get described relatives on tree
     const selectors = selector_list.getElementsByClassName("selector")
 
@@ -288,7 +291,6 @@ ask_button.addEventListener("click", function () {
 
     while (steps.length != 0) {
         const current_step = steps.pop()
-        //console.log(current_references)
 
         let next_references = []
 
@@ -300,11 +302,15 @@ ask_button.addEventListener("click", function () {
     }
 
     const described_relatives = current_references
+    described_relatives.forEach(relative => {
+        relative.isDescribed = true
+    });
 
 
     // 2. get reference point on tree
 
-    const reference_relative = get_relative(origin, get_selector_values(reference_list.getElementsByClassName("selector")[0]))[0]
+    const reference_relative = get_relative(origin, get_selector_values(reference_list.getElementsByClassName("selector")[0]))[0];
+    reference_relative.isReference = true;
 
 
     // 3. get all unique steps to last common ancestors
@@ -316,6 +322,28 @@ ask_button.addEventListener("click", function () {
 
     steps_to_common_ancestors = new Set(steps_to_common_ancestors) // removes duplicates
     steps_to_common_ancestors = Array.from(steps_to_common_ancestors)
+
+
+
+    let last_common_ancestors = []
+
+    steps_to_common_ancestors.forEach(steps => {
+        console.log(steps)
+        const reference_step = steps["this"]
+        if (reference_step == 0) {
+            reference_relative.isLCA = true
+            last_common_ancestors.push(reference_relative)
+        } else {
+            const LCA = reference_relative.getParents(reference_step - 1)
+            LCA.forEach(element => {
+                element.isLCA = true
+                last_common_ancestors.push(element)
+            });
+        }
+    });
+
+    last_common_ancestors = new Set(last_common_ancestors)
+    last_common_ancestors = Array.from(last_common_ancestors)
 
 
     // 4. show name
@@ -336,5 +364,16 @@ ask_button.addEventListener("click", function () {
         }
     }
     reloadContent()
+
+    // 5. show tree chart
+
+    while (chart_section.hasChildNodes()) {
+        chart_section.removeChild(chart_section.firstChild)
+    }
+
+    last_common_ancestors.forEach(last_common_ancestor => {
+        console.log(last_common_ancestor)
+        build_chart_from_LCA(last_common_ancestor)
+    });
 
 })

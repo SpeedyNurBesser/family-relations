@@ -12,13 +12,18 @@ function checkParameter(parameter, name) {
 }
 
 class relativeNode {
-    constructor(parents = [], children = []) {
+    constructor(parents = [], children = [], isOrigin = false, isLCA = false, isReference = false, isDescribed = false) {
         this.value = currentValue;
         currentValue++;
         this.parents = parents;
         this.children = children;
 
         // most of the time those arrays will be arrays of one or none, except for children relationships within the origin's direct ancestry, where it would make sense to have 2 children (own parents vs piblings (aunts and uncles))
+
+        this.isOrigin = isOrigin;
+        this.isLCA = isLCA;
+        this.isReference = isReference;
+        this.isDescribed = isDescribed;
     }
 
     getDirectParents() {
@@ -53,7 +58,7 @@ class relativeNode {
 
     getDirectChildren() {
         if (this.children.length == 0) {
-            this.children = [new relativeNode([this], [], [])]
+            this.children = [new relativeNode([this], [])]
         }
 
         return this.children
@@ -86,7 +91,7 @@ class relativeNode {
         // you only have one kind of sibling, i.e. no parameters needed
         let siblings = []
 
-        const parents = this.getParents()
+        const parents = Array.from(this.getParents())
 
         parents.forEach(parent => {
             let children = parent.getChildren()

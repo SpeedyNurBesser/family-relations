@@ -1,0 +1,185 @@
+:root {
+    --lca-color: #529b2f;
+    --reference-color: #fb6060;
+    --origin-color: #ffd569;
+    --described-color: #66d9ef;
+}
+
+.default-node {
+    width: 64px;
+    height: 64px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px black solid;
+    border-radius: 12px;
+    background-color: #aab2c3;
+}
+
+.explanation-chart {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.explanation-node {
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px black solid;
+    border-radius: 12px;
+    background-color: #aab2c3;
+}
+
+.explanation-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.lca-node {
+    background-color: var(--lca-color);
+}
+
+.reference-node {
+    background-color: var(--reference-color);
+}
+
+.origin-node {
+    background-color: var(--origin-color);
+}
+
+.described-node {
+    background-color: var(--described-color);
+}
+
+
+
+.lca-node.reference-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--lca-color) 0px,
+        var(--lca-color) 10px,
+        var(--reference-color) 10px,
+        var(--reference-color) 20px
+    );
+}
+
+.lca-node.origin-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--lca-color) 0px,
+        var(--lca-color) 10px,
+        var(--origin-color) 10px,
+        var(--origin-color) 20px
+    );
+}
+
+.lca-node.described-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--lca-color) 0px,
+        var(--lca-color) 10px,
+        var(--described-color) 10px,
+        var(--described-color) 20px
+    );
+}
+
+.reference-node.origin-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--reference-color) 0px,
+        var(--reference-color) 10px,
+        var(--origin-color) 10px,
+        var(--origin-color) 20px
+    );
+}
+
+.reference-node.described-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--reference-color) 0px,
+        var(--reference-color) 10px,
+        var(--described-color) 10px,
+        var(--described-color) 20px
+    );
+}
+
+.origin-node.described-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--origin-color) 0px,
+        var(--origin-color) 10px,
+        var(--described-color) 10px,
+        var(--described-color) 20px
+    );
+}
+
+
+
+.lca-node.reference-node.origin-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--lca-color) 0px,
+        var(--lca-color) 10px,
+        var(--reference-color) 10px,
+        var(--reference-color) 20px,
+        var(--origin-color) 20px,
+        var(--origin-color) 30px
+    );
+}
+
+.lca-node.reference-node.described-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--lca-color) 0px,
+        var(--lca-color) 10px,
+        var(--reference-color) 10px,
+        var(--reference-color) 20px,
+        var(--described-color) 20px,
+        var(--described-color) 30px
+    );
+}
+
+.lca-node.origin-node.described-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--lca-color) 0px,
+        var(--lca-color) 10px,
+        var(--origin-color) 10px,
+        var(--origin-color) 20px,
+        var(--described-color) 20px,
+        var(--described-color) 30px
+    );
+}
+
+.reference-node.origin-node.described-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--reference-color) 0px,
+        var(--reference-color) 10px,
+        var(--origin-color) 10px,
+        var(--origin-color) 20px,
+        var(--described-color) 20px,
+        var(--described-color) 30px
+    );
+}
+
+
+
+.lca-node.reference-node.origin-node.described-node {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--lca-color) 0px,
+        var(--lca-color) 10px,
+        var(--reference-color) 10px,
+        var(--reference-color) 20px,
+        var(--origin-color) 20px,
+        var(--origin-color)30px,
+        var(--described-color) 30px,
+        var(--described-color) 40px
+    )
+}

@@ -1,4 +1,4 @@
-const selector_list = document.getElementById("selector-list");
+let selector_list = document.getElementById("selector-list");
 const reference_list = document.getElementById("reference-list");
 const add_button = document.getElementById("add");
 const ask_button = document.getElementById("ask");

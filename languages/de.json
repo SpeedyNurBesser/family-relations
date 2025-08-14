@@ -72,5 +72,10 @@
     "lower-grand": "groß",
     "lower-grand-child-prefix": "enkel",
 
-    "or": "ODER"
+    "or": "ODER",
+
+    "lca": "Letzer gemeinsamer Vorfahr",
+    "origin": "Du",
+    "reference": "Ausgangspunkt",
+    "described": "Gesuchte Person"
 }

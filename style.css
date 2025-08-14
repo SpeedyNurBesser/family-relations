@@ -107,6 +107,7 @@ h1 {
     color: white;
     border: transparent;
     border-radius: 12px;
+    margin-left: auto;
 }
 
 .selector button:hover {
