@@ -68,5 +68,10 @@
     "lower-grand": "Grand ",
     "lower-grand-child-prefix": "Grand ",
 
-    "or": "OR"
+    "or": "OR",
+
+    "lca": "Last common ancestor",
+    "origin": "You",
+    "reference": "Reference point",
+    "described": "Described Person"
 }
