@@ -165,3 +165,24 @@ h1 {
 .answer {
     font-weight: bold;
 }
+
+#title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#github_button {
+    background-color: #6c757d;
+    padding: 4px;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+#github_button:hover {
+    background-color: #626a72;
+    transition-duration: 0.4s;
+}
