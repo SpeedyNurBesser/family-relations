@@ -34,7 +34,7 @@ function get_relative(reference, step) {
 
 function create_relation_name_from_steps_to_last_common_ancestor(steps_reference, steps_other) {
     let text_object = document.createElement("div")
-    text_object.setAttribute("class", "")
+    text_object.setAttribute("class", "answer")
 
     let your = document.createElement("span")
     your.setAttribute("data-i18n", "your")

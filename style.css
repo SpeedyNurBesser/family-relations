@@ -161,3 +161,7 @@ h1 {
     width: 768px;
     padding: 32px;
 }
+
+.answer {
+    font-weight: bold;
+}
